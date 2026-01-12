@@ -16,12 +16,13 @@ user_model =  {
 # 회원 로그인
 
 # 회원 정보 조회
-def get_user_info():
+def get_user_info(user_id: str):
 
     # do something...
 
     return {
         "message": "user_fetched_successfully",
+        "user_id" : user_id,
         "data": user_model,
     }
 
